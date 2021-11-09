@@ -1,1 +1,163 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    /* i deleted border:0 bc i want border around things
+    HTML5 display-role reset for older browsers */
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Styles*/
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    /*border: 1px solid grey;*/
+}
+
+/*General section below*/
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 2%;
+}
+
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0.5% 2%;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+}
+
+
+/*Nav section below*/
+header{
+    background-color:lightcyan;
+}
+nav{
+    padding: 0% 5%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    /*border: solid 1px #4f4f4f;*/
+    padding: 0.5% 2.5%;
+    text-align: center;
+}
+
+/*body styles*/
+.top, .middle{
+    padding: 2%;
+    max-width: 100%;
+}
+
+.topImage{
+    display:flex;
+    display:inline-block;
+    width: 50rem;
+}
+
+.left{
+    display:flex;
+    /* border: 1px solid pink; */
+    align-items: center;
+}
+
+.text{
+    padding-left: 10%;
+    line-height: 2;
+}
+
+button{
+    padding: 2% 7%;
+}
+
+/*middle style*/
+.middle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display:inline-block;
+    width: 25%;
+    padding: 20px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.boxText{
+    text-align: center;
+}
+
+/*Footer style*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:lightcyan;
+    padding: 9rem;
+}
+
+footer a{
+    background-color: white;
+}
