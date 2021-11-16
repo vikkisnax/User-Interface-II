@@ -52,7 +52,7 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    /*border: 1px solid grey;*/
+    /*border: 1px solid grey; comment out after*/
 }
 
 /*General section below*/
@@ -103,7 +103,7 @@ a{
 }
 
 .topImage{
-    display:flex;
+    /*display:flex; --this isn't doing anything*/
     display:inline-block;
     width: 50rem;
 }
@@ -132,7 +132,7 @@ button{
 }
 
 .box {
-    display:flex;
+    /*display:flex; don't need bc not parent for anything*/
     justify-content: center;
     align-items: center;
     display:inline-block;
@@ -160,4 +160,70 @@ footer{
 
 footer a{
     background-color: white;
+}
+
+
+/*Media Queries*/
+@media(max-width:800px){
+    /*everything looks good here still*/
+}
+
+@media(max-width:500px){
+    /*header and nav styles for mobile*/
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav a{
+        border: 1px solid #4f4f4f;
+        padding: 10% 75%;
+        padding-right: 150%;
+    }
+
+    /*top section styles for mobile*/
+    .top{
+        display: flex;
+    }
+    .left{
+    align-items: center;
+    flex-direction: column;
+    }
+    .topImage{
+        padding: 5%;
+    }
+    .text{
+        text-align: center;
+    }
+
+    /*middle mobile styles*/
+    .box{
+        width: 50%;
+    }
+    .middle{
+        justify-content: center;
+    }
+
+    /*Footer mobile styles*/
+    h2{
+        font-size: 2rem;
+        padding-bottom: 5%;
+    }
+    footer{
+        padding: 3rem;
+    }
+    footer a{
+        padding: 2%;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 2rem;
+    }
 }
